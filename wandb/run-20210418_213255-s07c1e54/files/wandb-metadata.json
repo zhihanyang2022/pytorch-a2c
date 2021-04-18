@@ -1,0 +1,28 @@
+{
+    "os": "Darwin-19.6.0-x86_64-i386-64bit",
+    "python": "3.7.10",
+    "heartbeatAt": "2021-04-18T13:33:00.482347",
+    "startedAt": "2021-04-18T13:32:55.960873",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--n_step=5",
+        "--run_id=0",
+        "--verbose=1",
+        "--delay_reward=1",
+        "--use_sil=1"
+    ],
+    "state": "running",
+    "program": "train_cartpole.py",
+    "codePath": "train_cartpole.py",
+    "git": {
+        "remote": "https://github.com/zhihanyang2022/pytorch-a2c",
+        "commit": "b21265fbd7d22889e3dd6d93189cbb1e841d9645"
+    },
+    "email": "yangz2@carleton.edu",
+    "root": "/Users/yangzhihan/Desktop/projects/pytorch-a2c",
+    "host": "zyang.local",
+    "username": "yangzhihan",
+    "executable": "/Users/yangzhihan/miniconda3/envs/pomdpr/bin/python"
+}
