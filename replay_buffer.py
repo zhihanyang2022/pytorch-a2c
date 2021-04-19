@@ -1,7 +1,7 @@
-import numpy as np
-import torch
 from collections import namedtuple
 import random
+import numpy as np
+import torch
 
 # very exhaustive but as a result code is very easy to read ;)
 
@@ -55,6 +55,7 @@ class SequentialBuffer:
         return NStepTransitions(s, a, n_step_sum_of_r, n_step_s, done_within_n_step)
 
 # for SIL
+# no done is needed here because we only need to calculate the monte-carlo return for one episode at a time
 TransitionWithoutDone = namedtuple('TransitionWithoutDone', 's a r')
 TransitionWithoutDoneWithReturn = namedtuple('TransitionWithoutDoneWithReturn', 's a R')
 MonteCarloTransitions = namedtuple('MonteCarloTransitions', 's a R')

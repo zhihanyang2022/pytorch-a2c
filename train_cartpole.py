@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--n_step', type=int)
 parser.add_argument('--run_id', type=int)
 parser.add_argument('--verbose', type=int)
-parser.add_argument('--delay_reward', type=int)
+parser.add_argument('--delay_reward', type=int)  # a cumulative reward is given every 40 steps
 parser.add_argument('--use_sil', type=int)
 args = parser.parse_args()
 
@@ -35,7 +35,9 @@ if args.delay_reward:
         group = f'n_step={args.n_step} delay_reward'
 else:
     group = f'n_step={args.n_step}'
+
 print('Group:', group)
+
 wandb.init(
     project='a2c',
     entity='yangz2',
