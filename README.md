@@ -13,8 +13,9 @@ Features:
 - Written in PyTorch, uses weights and biases to track learning
 - Minimal requirements: numpy, pytorch, gym, wandb (for logging)
 - Synchronous (use several episodes for each update)
-- Support discrete actions only
 - n-step can be changed (e.g., 1, 5 or even 200); set longer than timeout to get Monte-Carlo returns
+- Support discrete actions only
+- Tested on CartPole only
 - Optional: delay reward (a cumulative reward is given every 40 steps)
 - Optional: [self-imitation learning](https://arxiv.org/pdf/1806.05635.pdf) for sparse rewards
 
