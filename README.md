@@ -16,7 +16,7 @@ Features:
 - Support discrete actions only
 - n-step can be changed (e.g., 1, 5 or even 200); set longer than timeout to get Monte-Carlo returns
 - Optional: delay reward (a cumulative reward is given every 40 steps)
-- Optional: self-imitation learning (check out this paper) for sparse rewards
+- Optional: [self-imitation learning](https://arxiv.org/pdf/1806.05635.pdf) for sparse rewards
 
 ### Learning curves
 
