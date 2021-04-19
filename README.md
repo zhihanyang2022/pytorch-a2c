@@ -1,6 +1,6 @@
 # Advantage actor-critic
 
-Please free feel to submit an issue.
+Please free feel to use Issues to ask questions.
 
 ### What is A2C?
 
